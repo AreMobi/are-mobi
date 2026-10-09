@@ -1,0 +1,15 @@
+/*
+  The only file allowed to contain colour literals.
+  Provenance: k-means (k=6, seed 0) over opaque pixels of brand/LOGO ARE PNG...png (IHDR 2000x2000, 8-bit, colourtype 6),
+  each centre snapped to the nearest real pixel; coordinates are x,y from top-left. mist from brand/LOGO ARE PNG.png at 0,0.
+  tools/palette.json mirrors this and the gate re-reads the pixels to verify every value.
+*/
+:root {
+  --c-cyan: #01acfd;  /* 575,823 face of the letters, 57.6% of opaque pixels */
+  --c-ink: #05090b;   /* 601,813 outline and shadow, 39.1% */
+  --c-deep: #02334b;  /* 832,1140 darkest cyan shade */
+  --c-mid: #025782;   /* 610,1074 */
+  --c-azure: #0283bc; /* 1231,938 */
+  --c-sky: #03a2e1;   /* 711,1148 */
+  --c-mist: #eff2f7;  /* 0,0 of the opaque logo, flat backdrop */
+}

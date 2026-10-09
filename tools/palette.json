@@ -1,0 +1,12 @@
+{
+  "source": "k-means k=6 seed 0, snapped to real pixel",
+  "colours": [
+    { "token": "--c-cyan",  "hex": "#01acfd", "file": "brand/LOGO ARE PNG...png", "x": 575,  "y": 823 },
+    { "token": "--c-ink",   "hex": "#05090b", "file": "brand/LOGO ARE PNG...png", "x": 601,  "y": 813 },
+    { "token": "--c-deep",  "hex": "#02334b", "file": "brand/LOGO ARE PNG...png", "x": 832,  "y": 1140 },
+    { "token": "--c-mid",   "hex": "#025782", "file": "brand/LOGO ARE PNG...png", "x": 610,  "y": 1074 },
+    { "token": "--c-azure", "hex": "#0283bc", "file": "brand/LOGO ARE PNG...png", "x": 1231, "y": 938 },
+    { "token": "--c-sky",   "hex": "#03a2e1", "file": "brand/LOGO ARE PNG...png", "x": 711,  "y": 1148 },
+    { "token": "--c-mist",  "hex": "#eff2f7", "file": "brand/LOGO ARE PNG.png",   "x": 0,    "y": 0 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "are-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static site for are.mobi. Deploy the dist/ folder.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "gates": "node tools/gates.mjs",
+    "serve": "node tools/serve.mjs",
+    "check": "npm run build && npm run gates"
+  }
+}

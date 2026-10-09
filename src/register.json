@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "records": {
+    "domain": { "state": "stated", "value": "are.mobi", "url": "https://are.mobi", "source": "client-confirmed" },
+    "chain": { "state": "stated", "value": "solana", "url": null, "source": "client-confirmed", "scope": "batch-level" },
+    "rpc": { "state": "stated", "value": null, "url": "https://solana-rpc.publicnode.com", "source": "client-confirmed", "scope": "batch-level" },
+    "dex": { "state": "stated", "value": null, "url": "https://api.dexscreener.com/token-boosts/top/v1", "source": "client-confirmed", "scope": "batch-level" },
+    "dexTokens": { "state": "stated", "value": null, "url": "https://api.dexscreener.com/tokens/v1/solana", "source": "client-confirmed", "scope": "batch-level" },
+    "x": { "state": "stated", "value": null, "url": "https://x.com/are_mobi", "source": "client-confirmed" },
+    "github": { "state": "absent", "value": null, "url": null, "source": null },
+    "ca": { "state": "absent", "value": null, "url": null, "source": null }
+  }
+}

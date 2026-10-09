@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>ARE | Software, taken apart</title>
+    <meta name="description" content="ARE equips AI assistants to dissect software, observe it executing and report findings. Live Solana block height and token pairs below." />
+    <meta name="theme-color" content="#05090b" />
+    <meta property="og:title" content="ARE" />
+    <meta property="og:description" content="Dissect software, observe it executing, get answers that hold up." />
+    <meta property="og:image" content="assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://are.mobi" />
+    <link rel="stylesheet" href="assets/tokens.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <noscript><style>.rv{opacity:1}</style></noscript>
+    <script type="application/json" id="register">{"schema":1,"records":{"domain":{"state":"stated","value":"are.mobi","url":"https://are.mobi","source":"client-confirmed"},"chain":{"state":"stated","value":"solana","url":null,"source":"client-confirmed","scope":"batch-level"},"rpc":{"state":"stated","value":null,"url":"https://solana-rpc.publicnode.com","source":"client-confirmed","scope":"batch-level"},"dex":{"state":"stated","value":null,"url":"https://api.dexscreener.com/token-boosts/top/v1","source":"client-confirmed","scope":"batch-level"},"dexTokens":{"state":"stated","value":null,"url":"https://api.dexscreener.com/tokens/v1/solana","source":"client-confirmed","scope":"batch-level"},"x":{"state":"stated","value":null,"url":"https://x.com/are_mobi","source":"client-confirmed"},"github":{"state":"absent","value":null,"url":null,"source":null},"ca":{"state":"absent","value":null,"url":null,"source":null}}}</script>
+    <script type="module" src="assets/main.js"></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Jump to main</a>
+    <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress"></div></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="topbar">
+      <header>
+        <div class="container header-inner">
+          <a class="brand" href="./" aria-label="ARE home">
+            <img src="assets/logo.png" width="58" height="20" alt="ARE" />
+            <span class="brand-caption">Software, taken apart</span>
+          </a>
+          <nav class="navigation" aria-label="Primary links">
+            <a href="#market">Live pairs</a>
+            <a href="#capabilities">Toolkit</a>
+            <a href="#method">Method</a>
+            <a href="#questions">FAQ</a>
+          </nav>
+          <div class="social" aria-label="Social links"><a class="social-link" data-record="x" data-spot href="https://x.com/are_mobi" target="_blank" rel="noopener noreferrer" aria-label="X: @are_mobi" title="X @are_mobi"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><span class="social-link" data-record="github" role="link" aria-disabled="true" aria-label="GitHub, not announced yet" title="GitHub, not announced yet"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></span></div>
+        </div>
+      </header>
+      <div class="ca" data-record="ca" data-state="absent"><div class="container ca-inner"><span class="ca-label">Contract address</span><p class="ca-value" data-ca-value style="margin:0">Not announced yet. This slot unlocks the instant the team names one.</p><button class="ca-btn" data-copy-ca type="button" disabled aria-disabled="true" aria-label="Copy contract address, unavailable">Copy</button></div></div>
+    </div>
+
+    <details class="home-page-nav" data-home-nav open>
+      <summary class="container">
+        <span>Sections</span>
+        <span class="home-nav-current" data-home-nav-current aria-hidden="true">Overview</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" /></svg>
+      </summary>
+      <nav class="home-nav-links" aria-label="Page sections">
+        <div class="container">
+          <span class="home-nav-title">Sections</span>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#pulse">Chain pulse</a></li>
+            <li><a href="#market">Live pairs</a></li>
+            <li><a href="#capabilities">Toolkit</a></li>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#questions">Questions</a></li>
+          </ul>
+        </div>
+      </nav>
+    </details>
+
+    <main id="main">
+      <section class="hero-wrap" id="overview">
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+            <g class="layer" data-depth="0.012">
+              <polygon class="panel-shape" points="330,40 560,120 560,250 330,170" />
+              <path class="panel-line" d="M360 90 l36 14 M360 118 l60 22 M360 146 l48 18" />
+            </g>
+            <g class="layer" data-depth="0.028">
+              <polygon class="cube-face" points="130,300 210,262 290,300 290,390 210,430 130,390" />
+              <polyline class="cube-edge" points="130,300 210,338 290,300" />
+              <line class="cube-edge" x1="210" y1="338" x2="210" y2="430" />
+            </g>
+            <g class="layer" data-depth="0.05">
+              <polygon class="panel-shape" points="380,330 590,410 590,500 380,420" />
+              <path class="panel-line" d="M410 372 l70 26 M410 396 l100 38 M410 420 l84 32" />
+              <polygon class="cube-face" points="440,60 500,30 560,60 560,110 500,140 440,110" />
+              <polyline class="cube-edge" points="440,60 500,90 560,60" />
+            </g>
+          </svg>
+        </div>
+        <div class="container hero hero-grid">
+          <div>
+            <div class="pill rv" data-live-pill data-state="idle" role="status">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Live</span><span class="pill-sep" aria-hidden="true">/</span>
+              <span>Solana</span><span class="pill-sep" aria-hidden="true">/</span>
+              <span class="mono" data-pill-block>block —</span>
+            </div>
+            <h1 class="rv">Crack the black box.</h1>
+            <p class="lede rv">ARE equips an AI assistant to open up strange software, follow its live behavior, and return findings that survive scrutiny.</p>
+            <div class="actions rv">
+              <a class="button" href="#market" data-spot>Browse live pairs</a>
+              <a class="button secondary" href="#method" data-spot>How a session runs</a>
+            </div>
+          </div>
+          <img class="hero-logo rv" src="assets/logo.png" width="640" height="217" alt="ARE wordmark in pixel lettering" />
+        </div>
+      </section>
+
+      <section class="section" id="pulse" aria-labelledby="pulse-h">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="pulse-h" class="rv">The chain, right now</h2>
+            <p class="rv">Nobody typed these figures. Every tile polls an open feed at fixed intervals and blanks itself, plus a short explanation, whenever that feed falls silent.</p>
+          </div>
+          <div class="stats">
+            <div class="tile rv" data-spot data-tile="block">
+              <span class="tile-label">Block height</span>
+              <span class="tile-value"><span class="skel" data-skel></span><span class="val" data-val hidden></span></span>
+              <span class="tile-note" data-note aria-live="polite">Asking the RPC node every 2 s</span>
+            </div>
+            <div class="tile rv" data-spot data-tile="pairs">
+              <span class="tile-label">Solana tokens listed</span>
+              <span class="tile-value"><span class="skel" data-skel></span><span class="val" data-val hidden></span></span>
+              <span class="tile-note" data-note aria-live="polite">Top 10 by 24 h volume</span>
+            </div>
+            <div class="tile rv" data-spot data-tile="volume">
+              <span class="tile-label">24 h volume, combined</span>
+              <span class="tile-value"><span class="skel" data-skel></span><span class="val" data-val hidden></span></span>
+              <span class="tile-note" data-note aria-live="polite">Summed across listed tokens</span>
+            </div>
+            <div class="tile rv" data-spot data-tile="sync">
+              <span class="tile-label">Last good sync</span>
+              <span class="tile-value"><span class="skel" data-skel></span><span class="val" data-val hidden></span></span>
+              <span class="tile-note" data-note aria-live="polite">Seconds since the node answered</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="market" aria-labelledby="market-h">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="market-h" class="rv">Busiest Solana tokens</h2>
+            <p class="rv">A public DEX index supplies today’s most-promoted Solana tokens, then each is ranked by trading volume. Appearing here says nothing about ARE.</p>
+          </div>
+          <div class="marquee rv" data-marquee aria-label="Token ticker strip">
+            <div class="marquee-track" data-marquee-track>
+              <div class="marquee-set"><span class="chip"><span class="skel circle"></span><span class="skel"></span></span><span class="chip"><span class="skel circle"></span><span class="skel"></span></span><span class="chip"><span class="skel circle"></span><span class="skel"></span></span></div>
+            </div>
+          </div>
+          <div class="rv">
+            <div class="pair-head" aria-hidden="true">
+              <span>Token</span><span class="num">Price</span><span class="num">24 h</span><span class="num">24 h volume</span><span></span>
+            </div>
+            <ul class="pairs" data-pairs aria-busy="true">
+              <li class="pair"><div class="token"><span class="skel circle"></span><span class="skel"></span></div><div class="skel wide"></div><div class="skel wide"></div><div class="skel wide"></div><span></span></li>
+              <li class="pair"><div class="token"><span class="skel circle"></span><span class="skel"></span></div><div class="skel wide"></div><div class="skel wide"></div><div class="skel wide"></div><span></span></li>
+              <li class="pair"><div class="token"><span class="skel circle"></span><span class="skel"></span></div><div class="skel wide"></div><div class="skel wide"></div><div class="skel wide"></div><span></span></li>
+            </ul>
+            <p class="pairs-note" data-pairs-note aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities" aria-labelledby="cap-h">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="cap-h" class="rv">One kit, three jobs</h2>
+            <p class="rv">Compiled code hides its reasoning. ARE hands an assistant the routine moves of a human analyst, minus the late nights.</p>
+          </div>
+          <div class="cards">
+            <article class="card rv" data-spot>
+              <span class="card-num">DISSECT</span>
+              <h3>Split it open</h3>
+              <p>Unpack software into its routines, text constants and invocation chains so no feature stays hidden inside sealed or minified code.</p>
+            </article>
+            <article class="card rv" data-spot>
+              <span class="card-num">OBSERVE</span>
+              <h3>Watch it move</h3>
+              <p>Launch the subject under watch and record real activity: files opened, requests sent, state changed. Traces replace hunches.</p>
+            </article>
+            <article class="card rv" data-spot>
+              <span class="card-num">EXPLAIN</span>
+              <h3>Say it plainly</h3>
+              <p>Findings arrive as brief claims with proof attached, ready for patching, extending or rebuilding from scratch.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="method" aria-labelledby="method-h">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="method-h" class="rv">A session, start to finish</h2>
+            <p class="rv">Three beats, repeated until the mystery is gone.</p>
+          </div>
+          <ol class="steps">
+            <li class="rv"><h3>Ask</h3><p>Name a behavior nobody can explain. A crash, a sluggish screen, a rule no one wrote down.</p></li>
+            <li class="rv"><h3>Trace</h3><p>Probes get picked and executed automatically, and every observation gets stored as a replayable log.</p></li>
+            <li class="rv"><h3>Rebuild</h3><p>Once the logic is spelled out, reproduce it, repair it or author a cleaner version.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="questions" aria-labelledby="faq-h">
+        <div class="container">
+          <h2 id="faq-h" class="rv">Questions</h2>
+          <div class="faq-list rv" data-faq>
+            <details class="faq-item" id="faq-ca"><summary>Has a contract address been published?</summary><div><p>Not yet. The pinned bar stays locked until the team states one; nothing here is guessed or scraped from search results. Treat any address found elsewhere as unverified.</p></div></details>
+            <details class="faq-item"><summary>What feeds these figures?</summary><div><p>Block height is requested from a public Solana RPC node every two seconds, with the counter ticking upward between replies. Price and volume arrive via DexScreener’s token endpoints. If either goes quiet, the affected tile shows a dash and says why, then retries with growing gaps.</p></div></details>
+            <details class="faq-item"><summary>Is every listed token tied to ARE?</summary><div><p>None of them. The list ranks busy Solana tokens as a market backdrop. Always compare any address with the one the team publishes.</p></div></details>
+            <details class="faq-item"><summary>Is any of this advice?</summary><div><p>No. This site relays public readings and nothing else. Nothing here recommends buying or selling.</p></div></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p><strong>ARE</strong> · are.mobi</p>
+          <p>Runs on Solana. Readings are public and may lag.</p>
+        </div>
+        <div class="footer-links"><a href="https://x.com/are_mobi" target="_blank" rel="noopener noreferrer">X @are_mobi</a><span aria-disabled="true">GitHub, not announced yet</span></div>
+      </div>
+    </footer>
+  </body>
+</html>
